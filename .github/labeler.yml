@@ -1,15 +1,29 @@
 version: v1
 
 labels:
+  # Issue Labels
   - label: 'Lifecycle: Frozen'
     matcher:
-	    comment: '/freeze'
+      comment: '/freeze'
   - label: 'Resolution: Fixed'
     matcher:
-	    comment: '/fixed'
+      comment: '/fixed'
   - label: 'Resolution: Partially Fixed'
     matcher:
-	    comment: '/partial'
+      comment: '/partial'
+  - label: 'Resolution: Deferred'
+    matcher:
+      comment: '/defer'
   - label: 'Resolution: Wont Fix'
     matcher:
-	    comment: '/no-fix'
+      comment: '/no-fix'
+  # PR Labels
+  - label: 'PR - Review Status: Passed'
+    matcher:
+      comment: '/review-pass'
+  - label: 'PR - Review Status: In Progress'
+    matcher:
+      comment: '/review-start'
+  - label: 'PR - Review Status: Failed'
+    matcher:
+      comment: '/review-fail'

@@ -1,9 +1,6 @@
 name: Labeling Commands
 
-on:
-  issues:
-    types: [closed]
-    
+on:  
   issue_comment:
   
   pull_request:
@@ -23,12 +20,4 @@ jobs:
       - uses: fuxingloh/multi-labeler@v4
         with:
           github-token: ${{secrets.GITHUB_TOKEN}}
-          config-path: .github/labeler.yml   
-  remove_labels:
-    name: Remove Labels on Close
-    runs-on: ubuntu-latest
-    steps:
-      - uses: mondeja/remove-labels-gh-action@v2
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          labels: 'Lifecycle: Active, Lifecycle: Frozen'
+          config-path: .github/labeler.yml

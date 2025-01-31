@@ -2,9 +2,16 @@ name: Labeling Commands
 
 on:
   issue_comment:
+  
+  pull_request:
+  
 permissions:
   contents: read
   issues: write
+  pull-requests: write
+  statuses: write # to generate status
+  checks: write # to generate status
+  
 jobs:
   labeler:
     name: Labeler

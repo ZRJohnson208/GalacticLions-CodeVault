@@ -1,8 +1,6 @@
 name: Labeling Commands
 
 on:  
-  issues:
-
   issue_comment:
   
   pull_request:
@@ -23,12 +21,3 @@ jobs:
         with:
           github-token: ${{secrets.GITHUB_TOKEN}}
           config-path: .github/labeler.yml
-  remove_labels:
-    if: github.event.issue.state == 'closed'
-    name: Remove Labels on Close
-    runs-on: ubuntu-latest
-    steps:
-      - uses: mondeja/remove-labels-gh-action@v2
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          labels: 'Lifecycle: Active'

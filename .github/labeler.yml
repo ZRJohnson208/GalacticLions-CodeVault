@@ -13,7 +13,7 @@ labels:
       comment: '/partial'
   - label: 'Resolution: Deferred'
     matcher:
-      comment: '/defer, /deferred'
+      comment: '/defer'
   - label: 'Resolution: Wont Fix'
     matcher:
       comment: '/no-fix'

@@ -2,7 +2,7 @@ name: Labeling Commands
 
 on:  
   issues:
-    type: [labeled, closed]
+    type: [closed]
     
   issue_comment:
   
@@ -31,5 +31,5 @@ jobs:
     steps:
       - uses: mondeja/remove-labels-gh-action@v2
         with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}
           labels: 'Lifecycle: Active'

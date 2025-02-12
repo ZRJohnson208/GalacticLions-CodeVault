@@ -26,8 +26,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          github-script:
-             |
+          script: |
             github.issues.addLabels({
               issue_number: context.issue.number,
               labels: ['Lifecycle: Active']

@@ -22,16 +22,8 @@ jobs:
         with:
           github-token: ${{secrets.GITHUB_TOKEN}}
           config-path: .github/labeler.yml
-      - uses: actions/github-script@v6
+      - uses: actions/labeler@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          script: |
-            const issue_number = context.issue.number;
-            const labels = ['Lifecycle: Active'];
-            await github.issues.addLabels({
-              issue_number: issue_number,
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              labels: labels
-            });
+          labels: 'Lifecycle: Active'

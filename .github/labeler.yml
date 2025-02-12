@@ -30,11 +30,4 @@ labels:
       
   - label: 'Lifecycle: Active'
     matcher:
-      title: 'test' 
-   
-checks:
-  - context: 'Merge check'
-    description: 'Labels for merge.'
-    labels:
-      any: ['PR - Review Status: Passed']
-      none: ['PR - Review Status: Failed']
+      title: '[' 

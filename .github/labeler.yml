@@ -30,7 +30,7 @@ labels:
       
   - label: 'Lifecycle: Active'
     matcher:
-      title: '[]' 
+      title: '\\[\\]' 
    
 checks:
   - context: 'Merge check'

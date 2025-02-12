@@ -2,7 +2,6 @@ name: Labeling Commands
 
 on:  
   issue_comment:
-    types: [opened]
   pull_request:
   
 permissions:
@@ -19,14 +18,3 @@ jobs:
         with:
           github-token: ${{secrets.GITHUB_TOKEN}}
           config-path: .github/labeler.yml
-          
-      - uses: actions/github-script@v6
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          github-script:
-             |
-            github.issues.addLabels({
-              issue_number: context.issue.number,
-              labels: ['Lifecycle: Active']
-            })

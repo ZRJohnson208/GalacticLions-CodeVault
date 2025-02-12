@@ -1,6 +1,8 @@
 name: Labeling Commands
 
 on:  
+  issues:
+    types: [opened]
   issue_comment:
   pull_request:
   

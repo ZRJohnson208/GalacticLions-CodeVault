@@ -17,6 +17,11 @@ labels:
   - label: 'Resolution: Wont Fix'
     matcher:
       comment: '/no-fix'
+      
+  - label: 'Lifecycle: Active'
+    matcher:
+      title: '^\s*$'
+      
   # PR Labels
   - label: 'PR - Review Status: Passed'
     matcher:

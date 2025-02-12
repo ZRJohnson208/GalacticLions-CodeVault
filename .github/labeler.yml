@@ -18,10 +18,6 @@ labels:
     matcher:
       comment: '/no-fix'
       
-  - label: 'Lifecycle: Active'
-    matcher:
-      title: '^\[*'
-      
   # PR Labels
   - label: 'PR - Review Status: Passed'
     matcher:

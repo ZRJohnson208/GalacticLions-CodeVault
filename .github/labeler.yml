@@ -30,7 +30,7 @@ labels:
       
   - label: 'Lifecycle: Active'
     matcher:
-      branch: '^main/.*' 
+      branch: 'main' 
    
 checks:
   - context: 'Merge check'

@@ -27,7 +27,3 @@ labels:
   - label: 'PR - Review Status: Failed'
     matcher:
       comment: '/review-fail'
-      
-  - label: 'Lifecycle: Active'
-    matcher:
-      title: 'test' 

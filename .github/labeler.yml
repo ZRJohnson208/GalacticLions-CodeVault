@@ -20,7 +20,7 @@ labels:
       
   - label: 'Lifecycle: Active'
     matcher:
-      title: '^/[*'
+      title: '['
   # PR Labels
   - label: 'PR - Review Status: Passed'
     matcher:

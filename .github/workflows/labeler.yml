@@ -2,6 +2,7 @@ name: Labeling Commands
 
 on:  
   issue_comment:
+    types: [opened]
   pull_request:
   
 permissions:

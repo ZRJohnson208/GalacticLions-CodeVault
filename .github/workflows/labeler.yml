@@ -1,6 +1,9 @@
 name: Labeling Commands
 
 on:  
+  issues:
+    types: [opened]
+
   issue_comment:
   
   pull_request:
@@ -19,3 +22,6 @@ jobs:
         with:
           github-token: ${{secrets.GITHUB_TOKEN}}
           config-path: .github/labeler.yml
+      - uses: andymckay/labeler@1.0.4
+        with:
+          add-labels: "Lifecycel: Active"

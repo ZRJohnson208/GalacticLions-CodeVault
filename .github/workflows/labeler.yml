@@ -24,4 +24,4 @@ jobs:
           config-path: .github/labeler.yml
       - uses: andymckay/labeler@1.0.4
         with:
-          add-labels: "Lifecycel: Active"
+          add-labels: "Lifecycle: Active"

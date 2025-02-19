@@ -2,7 +2,7 @@ name: Labeling Commands
 
 on:  
   issues:
-    types: [opened]
+    types: [opened, closed]
 
   issue_comment:
   
@@ -19,6 +19,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Add Opening Label
+        if: github.event.issue.state == 'opened'
         uses: andymckay/labeler@1.0.4
         with:
           add-labels: "Lifecycle: Active"
@@ -27,3 +28,10 @@ jobs:
         with:
           github-token: ${{secrets.GITHUB_TOKEN}}
           config-path: .github/labeler.yml
+      - name: Remove Undesired Labels on Close
+        if: github.event.issue.state == 'closed'
+        uses: mondeja/remove-labels-gh-action@v2
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          labels: |
+            Lifecycle: Active

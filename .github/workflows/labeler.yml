@@ -19,7 +19,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Add Opening Label
-        if: github.event.issue.state == 'opened'
         uses: andymckay/labeler@1.0.4
         with:
           add-labels: "Lifecycle: Active"

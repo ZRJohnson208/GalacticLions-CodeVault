@@ -1,4 +1,4 @@
-name: Labeling Commands
+name: Labeler
 
 on:  
   issues:

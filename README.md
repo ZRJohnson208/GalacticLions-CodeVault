@@ -7,6 +7,7 @@ ___
 
 ![Contributers](https://img.shields.io/github/contributors/ftcteam5898/GalacticLions-Starter?color=0088ff)
 ![Issues](https://img.shields.io/github/issues/ftcteam5898/GalacticLions-Starter?color=0088ff)
+![Pull Requests](https://img.shields.io/github/issues-pr/ftcteam5898/GalacticLions-Starter?color=0088ff)
 
 # Galactic Lions TeamCode - 2024-2025 IntoTheDeep Season
 **Welcome to the Lakeview Robotics Code Respiratory! This space is primarily built for our dedicated programmers of our teams.**

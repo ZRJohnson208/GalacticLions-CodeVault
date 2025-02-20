@@ -6,7 +6,7 @@ ___
 
 [![Java CI](https://github.com/ftcteam5858/GalacticLions-Starter/actions/workflows/java.yml/badge.svg)](https://github.com/ftcteam5898/GalacticLions-Starter/actions/workflows/java.yml)
 [![License](https://img.shields.io/github/license/ftcteam5898/GalacticLions-Starter?color=0088ff)](https://choosealicense.com/licenses/bsd-3-clause-clear/)
-![Contributers](https://img.shields.io/github/contributors/ftcteam5898/GalacticLions-Starter?color=0088ff)
+[![Contributers](https://img.shields.io/github/contributors/ftcteam5898/GalacticLions-Starter?color=0088ff)](https://github.com/ftcteam5898/GalacticLions-Starter/graphs/contributors)
 ![Issues](https://img.shields.io/github/issues/ftcteam5898/GalacticLions-Starter?color=0088ff)
 ![Pull Requests](https://img.shields.io/github/issues-pr/ftcteam5898/GalacticLions-Starter?color=0088ff)
 

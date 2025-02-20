@@ -5,7 +5,7 @@ ___
 ![Android Studio](https://img.shields.io/badge/built_in-Android_Studio-3DDC84?style=for-the-badge)![Java](https://img.shields.io/badge/with-java-%23ED8B00.svg?style=for-the-badge)
 
 [![Java CI](https://github.com/ftcteam5858/GalacticLions-Starter/actions/workflows/java.yml/badge.svg)](https://github.com/ftcteam5898/GalacticLions-Starter/actions/workflows/java.yml)
-![License](https://img.shields.io/github/license/ftcteam5898/GalacticLions-Starter?color=0088ff)
+[![License](https://img.shields.io/github/license/ftcteam5898/GalacticLions-Starter?color=0088ff)](https://choosealicense.com/licenses/bsd-3-clause-clear/)
 ![Contributers](https://img.shields.io/github/contributors/ftcteam5898/GalacticLions-Starter?color=0088ff)
 ![Issues](https://img.shields.io/github/issues/ftcteam5898/GalacticLions-Starter?color=0088ff)
 ![Pull Requests](https://img.shields.io/github/issues-pr/ftcteam5898/GalacticLions-Starter?color=0088ff)

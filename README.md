@@ -5,7 +5,7 @@
 [![Java CI](https://github.com/ftcteam5898/GalacticLions-Starter/actions/workflows/java.yml/badge.svg)](https://github.com/ftcteam5898/GalacticLions-Starter/actions/workflows/java.yml)
 [![License](https://img.shields.io/github/license/ftcteam5898/GalacticLions-Starter?color=0088ff)](https://raw.githubusercontent.com/ftcteam5898/GalacticLions-Starter/refs/heads/master/LICENSE)
 [![Contributers](https://img.shields.io/github/contributors/ftcteam5898/GalacticLions-Starter?color=0088ff)](https://github.com/ftcteam5898/GalacticLions-Starter/graphs/contributors)
-[![GitHub commit activity](https://img.shields.io/github/commit-activity/m/ftcteam5898/GalacticLions-Starter?color=0088ff)](https://github.com/ftcteam5898/GalacticLions-Starter/commits/master/)
+[![GitHub commit activity](https://img.shields.io/github/commit-activity/m/ftcteam5898/GalacticLions-Starter?color=0088ff)](https://github.com/ftcteam5898/GalacticLions-Starter/pulse)
 [![Issues](https://img.shields.io/github/issues/ftcteam5898/GalacticLions-Starter?color=0088ff)](https://github.com/ftcteam5898/GalacticLions-Starter/issues)
 [![Pull Requests](https://img.shields.io/github/issues-pr/ftcteam5898/GalacticLions-Starter?color=0088ff)](https://github.com/ftcteam5898/GalacticLions-Starter/pulls)
 

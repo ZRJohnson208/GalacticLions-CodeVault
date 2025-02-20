@@ -2,7 +2,7 @@
 ![image](https://github.com/user-attachments/assets/209a029e-211d-40fe-bc4b-fef26d3470d0)
 ___
 
-![](https://img.shields.io/badge/built_in-grey?style=for-the-badge)![Android Studio](https://img.shields.io/badge/Android_Studio-3DDC84?style=for-the-badge&logo=android-studio&logoColor=white)![](https://img.shields.io/badge/with-grey?style=for-the-badge)![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white)
+![Android Studio](https://img.shields.io/badge/built_in-Android_Studio-3DDC84?style=for-the-badge)![Java](https://img.shields.io/badge/with-java-%23ED8B00.svg?style=for-the-badge)
 
 ![License](https://img.shields.io/github/license/ftcteam5898/GalacticLions-Starter?color=0088ff)
 ![Contributers](https://img.shields.io/github/contributors/ftcteam5898/GalacticLions-Starter?color=0088ff)

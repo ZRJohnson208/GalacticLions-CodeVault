@@ -1,4 +1,4 @@
-![Banner](https://github.com/user-attachments/assets/d1a3e4c1-be99-4c1a-bcd3-8255781202af)
+![Banner](https://github.com/ZRJohnson208/GalacticLions-CodeVault/blob/main/Repo-Banner.png)
 
 ![Android Studio](https://img.shields.io/badge/built_in-Android_Studio-3DDC84?style=for-the-badge)![Java](https://img.shields.io/badge/with-java-%23ED8B00.svg?style=for-the-badge)
 

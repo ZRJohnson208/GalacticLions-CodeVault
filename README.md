@@ -16,7 +16,7 @@ This is a module that contains the Android Studio projects with code for our rob
 
 ## Requirements
 
-To use this Android Studio project, you will need Android Studio 2024.2.1 (codename Ladybug) or later.
+To use this Android Studio project, you will need Android Studio Ladybug (2024.2) or later.
 
 To program your robot in Blocks or OnBot Java, you do not need Android Studio.
 

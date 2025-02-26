@@ -1,6 +1,6 @@
 <!--GalacticLions-Starter ReadMe | © 2024 Lakeview Academy. All right reserved. | Built by @ZRJohnson208-->
 
-![Banner](https://github.com/ZRJohnson208/GalacticLions-CodeVault/blob/main/Repo-Banner.png)
+![Banner](https://github.com/ZRJohnson208/GalacticLions-CodeVault/blob/master/Repo-Banner.png)
 
 ![Android Studio](https://img.shields.io/badge/built_in-Android_Studio-3DDC84?style=for-the-badge)![Java](https://img.shields.io/badge/with-java-%23ED8B00.svg?style=for-the-badge)
 

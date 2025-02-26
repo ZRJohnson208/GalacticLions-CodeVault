@@ -32,19 +32,19 @@ jobs:
     name: Test with Gradle
     needs: build
     steps:
-    - name: Checkout Code
-      uses: actions/checkout@v4
+      - name: Checkout Code
+        uses: actions/checkout@v4
       
-    - name: Grant execute permission to gradlew
-      run: chmod +x gradlew
+      - name: Grant execute permission to gradlew
+        run: chmod +x gradlew
 
-    - name: Perform Gradle Test
-      run: ./gradlew test
+      - name: Perform Gradle Test
+        run: ./gradlew test
   lint:
-      runs-on: ubuntu-latest
-      name: Lint changed files 
-      needs: test
-      steps:
+    runs-on: ubuntu-latest
+    name: Lint changed files 
+    needs: test
+    steps:
       - name: Checkout Code
         uses: actions/checkout@v2
         with:

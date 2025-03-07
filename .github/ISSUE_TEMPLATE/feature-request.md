@@ -2,7 +2,7 @@
 name: ✨ Feature/Improvment Request
 about: Submit a proposal/request for a new feature to your code
 title: '[✨]'
-labels: 'Enhancement, Needs-Topic'
+labels: 'Enhancement'
 assignees: ''
 ---
 

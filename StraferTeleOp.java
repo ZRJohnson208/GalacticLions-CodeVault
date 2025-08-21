@@ -12,21 +12,30 @@ import com.qualcomm.robotcore.hardware.DcMotorSimple;
 import org.firstinspires.ftc.robotcore.external.navigation.AngleUnit;
 import org.firstinspires.ftc.robotcore.external.Telemetry;
 
-/**
- * This particular OpMode executes a POV Teleop for a mecanum robot
- * The code is structured as a LinearOpMode
- *
- * In this mode the left stick moves the robot FWD and back and strafes left & right.
- * The Right stick rotates the robot left and right.
- *
- */
+// ****************************************************************************
+//  StraferTeleOp
+// ****************************************************************************
+//
+//   File Description:
+//      
+//      This particular OpMode executes a POV Teleop for a mecanum robot
+//      The code is structured as a LinearOpMode
+//
+//
+//
+// ****************************************************************************
+// This program is released under the BSD-3-Clause-Clear License.
+// ****************************************************************************
 
 @TeleOp(name="Strafer_Controls", group="Tele")
 public class StraferTeleOp extends LinearOpMode {
     @Override
     public void runOpMode() {
-        // Define and Initialize Motors
-        // Make sure your ID's match your configuration
+// ----------------------------------------------------------------------------
+// Define and Initialize the hardwareMaps
+// ----------------------------------------------------------------------------
+// Note: Make sure your ID's match your configuration
+        
         DcMotor frontLeft = hardwareMap.get(DcMotor.class, "lf");
         DcMotor frontRight = hardwareMap.get(DcMotor.class, "rf");
         DcMotor backLeft = hardwareMap.get(DcMotor.class, "lb");

@@ -30,8 +30,9 @@ import org.firstinspires.ftc.robotcore.external.Telemetry;
 public class StraferTeleOp extends LinearOpMode {
     @Override
     public void runOpMode() {
+
 // ----------------------------------------------------------------------------
-// Define and Initialize the hardwareMaps
+//    Define and Initialize the hardwareMaps
 // ----------------------------------------------------------------------------
 // Note: Make sure your ID's match your configuration
         
@@ -46,7 +47,7 @@ public class StraferTeleOp extends LinearOpMode {
         backLeft.setDirection(DcMotorSimple.Direction.REVERSE);
 
 // ----------------------------------------------------------------------------
-// Define and Initialize the REV Hub's Inertial measurement unit
+//    Define and Initialize the REV Hub's Inertial measurement unit
 // ----------------------------------------------------------------------------
 // Note: Adjust the orientation parameters to match your robot
         
@@ -68,16 +69,12 @@ public class StraferTeleOp extends LinearOpMode {
         while (opModeIsActive()) {
 
 // ----------------------------------------------------------------------------
-// Driving controls for the primary driver
+//    Driving controls for the primary driver
 // ----------------------------------------------------------------------------
             
             double y = -gamepad1.left_stick_y; // Note: pushing stick forward gives negative value
             double x = gamepad1.left_stick_x * 1.1; // Counteract imperfect strafing
             double rx = gamepad1.right_stick_x;
-
-            if (gamepad1.guide) {
-                imu.resetYaw();
-            }
 
             double botHeading = imu.getRobotYawPitchRollAngles().getYaw(AngleUnit.RADIANS);
 
@@ -98,39 +95,14 @@ public class StraferTeleOp extends LinearOpMode {
             frontRight.setPower(frontRightPower);
             backLeft.setPower(backLeftPower);
             backRight.setPower(backRightPower);
+            
+            if (gamepad1.guide) {
+                imu.resetYaw();
+            }
 
 // ----------------------------------------------------------------------------
-// Action controls for the secondary driver
+//    Action controls for the secondary driver
 // ----------------------------------------------------------------------------
-
-            int armPosition = arm.getCurrentPosition();
-
-            if (gamepad2.dpad_up && armPosition >= -2700) { // Arm Up
-                arm.setPower(-1);
-            }
-            else if (gamepad2.left_bumper) { // Arm Up - Sticky
-                arm.setTargetPosition(-2700);
-                arm.setMode(DcMotor.RunMode.RUN_TO_POSITION);
-                arm.setPower(1);
-            }
-            else if (gamepad2.dpad_down && armPosition <= 0) { // Arm Down
-                arm.setPower(1);
-            }
-            else if (gamepad2.right_bumper) { // Arm Down - Sticky
-                arm.setTargetPosition(0);
-                arm.setMode(DcMotor.RunMode.RUN_TO_POSITION);
-                arm.setPower(1);
-            }
-            else {
-                arm.setPower(0);
-            }
-
-            if (gamepad2.x) {
-                claw.setPosition(0.5); // open
-            }
-            else if (gamepad2.b) {
-                claw.setPosition(0.65); // close
-            }
         }
     }
 }

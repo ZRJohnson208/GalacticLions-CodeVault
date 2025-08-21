@@ -6,7 +6,6 @@ import com.qualcomm.robotcore.eventloop.opmode.OpMode;
 import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
 import com.qualcomm.robotcore.hardware.DcMotor;
 import com.qualcomm.robotcore.hardware.IMU;
-import com.qualcomm.robotcore.hardware.Servo;
 import com.qualcomm.robotcore.hardware.DcMotorSimple;
 
 import org.firstinspires.ftc.robotcore.external.navigation.AngleUnit;
@@ -41,30 +40,26 @@ public class StraferTeleOp extends LinearOpMode {
         DcMotor backLeft = hardwareMap.get(DcMotor.class, "lb");
         DcMotor backRight = hardwareMap.get(DcMotor.class, "rb");
 
-        DcMotor arm = hardwareMap.get(DcMotor.class, "arm");
-        arm.setZeroPowerBehavior(DcMotor.ZeroPowerBehavior.BRAKE);
-        arm.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
-        arm.setMode(DcMotor.RunMode.RUN_WITHOUT_ENCODER);
-
-        // Define and Initialize Servos
-        Servo claw = hardwareMap.get(Servo.class, "claw");
-
         // Reverse one side of the motors
         // If it goes in reverse, reverse the other side
         frontLeft.setDirection(DcMotorSimple.Direction.REVERSE);
         backLeft.setDirection(DcMotorSimple.Direction.REVERSE);
 
-        // Define and Initialize the IMU
+// ----------------------------------------------------------------------------
+// Define and Initialize the REV Hub's Inertial measurement unit
+// ----------------------------------------------------------------------------
+// Note: Adjust the orientation parameters to match your robot
+        
         IMU imu = hardwareMap.get(IMU.class, "imu");
-        // Adjust the orientation parameters to match your robot
         IMU.Parameters parameters = new IMU.Parameters(new RevHubOrientationOnRobot(
                 RevHubOrientationOnRobot.LogoFacingDirection.UP,
                 RevHubOrientationOnRobot.UsbFacingDirection.BACKWARD));
         // Without this, the REV Hub's orientation is assumed to be logo up / USB forward
         imu.initialize(parameters);
-
         imu.resetYaw();
 
+
+        
         telemetry.addData("Status", "Initialized");
         telemetry.update();
         // Wait for the game to start
@@ -72,9 +67,10 @@ public class StraferTeleOp extends LinearOpMode {
 
         while (opModeIsActive()) {
 
-            //---------- Driver 1 ----------//
-
-            // Driving controls
+// ----------------------------------------------------------------------------
+// Driving controls for the primary driver
+// ----------------------------------------------------------------------------
+            
             double y = -gamepad1.left_stick_y; // Note: pushing stick forward gives negative value
             double x = gamepad1.left_stick_x * 1.1; // Counteract imperfect strafing
             double rx = gamepad1.right_stick_x;
@@ -103,7 +99,9 @@ public class StraferTeleOp extends LinearOpMode {
             backLeft.setPower(backLeftPower);
             backRight.setPower(backRightPower);
 
-            //---------- Driver 2 ----------//
+// ----------------------------------------------------------------------------
+// Action controls for the secondary driver
+// ----------------------------------------------------------------------------
 
             int armPosition = arm.getCurrentPosition();
 

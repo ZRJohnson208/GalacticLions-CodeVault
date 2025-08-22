@@ -1,4 +1,4 @@
-<!--GalacticLions-Starter ReadMe | © 2024 Lakeview Academy. All right reserved. | Built by @ZRJohnson208-->
+<!--GalacticLions-Starter ReadMe | Built by @ZRJohnson208-->
 
 ![Banner](https://github.com/ZRJohnson208/GalacticLions-CodeVault/blob/main/Repo-Banner-New.png)
 

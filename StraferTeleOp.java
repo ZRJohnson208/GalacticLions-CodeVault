@@ -34,7 +34,7 @@ public class StraferTeleOp extends LinearOpMode {
 // ----------------------------------------------------------------------------
 //    Define and Initialize the hardwareMaps
 // ----------------------------------------------------------------------------
-// Note: Make sure your ID's match your configuration
+// Note: Make sure the ID's match in configuration
         
         DcMotor frontLeft = hardwareMap.get(DcMotor.class, "lf");
         DcMotor frontRight = hardwareMap.get(DcMotor.class, "rf");
@@ -49,7 +49,7 @@ public class StraferTeleOp extends LinearOpMode {
 // ----------------------------------------------------------------------------
 //    Define and Initialize the REV Hub's Inertial measurement unit
 // ----------------------------------------------------------------------------
-// Note: Adjust the orientation parameters to match your robot
+// Note: Adjust the orientation parameters to match the robot
         
         IMU imu = hardwareMap.get(IMU.class, "imu");
         IMU.Parameters parameters = new IMU.Parameters(new RevHubOrientationOnRobot(

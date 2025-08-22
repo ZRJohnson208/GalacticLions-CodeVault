@@ -28,7 +28,7 @@ If you are new to robotics or new to the _FIRST_ Tech Challenge, then it is higl
 
 When you are ready to program in Java, you can download the latest version of [Android Studio](https://developer.android.com/studio?gad_source=1&gclid=CjwKCAiAzvC9BhADEiwAEhtlN1GO7x4DcoMQ9Q-BR-_y67NSKy9FjMK88L6woepRECnAuXiWYT9yrRoCiA4QAvD_BwE&gclsrc=aw.ds) or use the OnBot Java Tool.
 
-## Questions or Need Help?
+## Getting Help
 ### User Documentation and Tutorials
 _FIRST_ maintains online documentation with information and tutorials on how to use the _FIRST_ Tech Challenge software and robot control system. Note that the online documentation is a living document that is constantly being updated and edited.
 

@@ -11,10 +11,10 @@
 [![Issues](https://img.shields.io/github/issues/ftcteam5898/GalacticLions-Starter?color=0088ff)](https://github.com/ftcteam5898/GalacticLions-Starter/issues)
 [![Pull Requests](https://img.shields.io/github/issues-pr/ftcteam5898/GalacticLions-Starter?color=0088ff)](https://github.com/ftcteam5898/GalacticLions-Starter/pulls)
 
-# Galactic Lions TeamCode - 2025-2026 Season
+# Galactic Lions TeamCode - 2025-2026 DECODE Season
 **Welcome to the Lakeview Robotics Code Respiratory! This space is primarily built for our dedicated programmers of our teams.**
 
-This is a module that contains the Android Studio projects with code for our robotics teams' FTC robots for the (NAME) competition season. It's based on the [original FTC SDK](https://github.com/FIRST-Tech-Challenge/FtcRobotController). While meant primarily for our teams' members, [this respiratory](https://github.com/ftcteam5898/GalacticLions-Starter) should be welcoming to contributions from external organizations and FTC community.
+This is a module that contains the Android Studio projects with code for our robotics teams' FTC robots for the DECODE competition season. It's based on the [original FTC SDK](https://github.com/FIRST-Tech-Challenge/FtcRobotController). While meant primarily for our teams' members, [this respiratory](https://github.com/ftcteam5898/GalacticLions-Starter) should be welcoming to contributions from external organizations and FTC community.
 
 ## Requirements
 

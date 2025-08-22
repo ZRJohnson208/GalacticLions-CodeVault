@@ -14,7 +14,7 @@
 # Galactic Lions TeamCode - 2025-2026 DECODE Season
 **Welcome to the Lakeview Robotics Code Respiratory! This space is primarily built for our dedicated programmers of our teams.**
 
-This is a module that contains the Android Studio projects with code for our robotics teams' FTC robots for the DECODE competition season. It's based on the [original FTC SDK](https://github.com/FIRST-Tech-Challenge/FtcRobotController). While meant primarily for our teams' members, [this respiratory](https://github.com/ftcteam5898/GalacticLions-Starter) should be welcoming to contributions from external organizations and FTC community.
+This is a module that contains the Android Studio projects with code for our robotics teams' _FIRST_ Tech Challenge competition robots for the DECODE season. It's based on the [original FTC SDK](https://github.com/FIRST-Tech-Challenge/FtcRobotController). While meant primarily for our teams' members, [this respiratory](https://github.com/ftcteam5898/GalacticLions-Starter) should be welcoming to contributions from external organizations and FTC community.
 
 ## Requirements
 
@@ -24,9 +24,12 @@ To program your robot in Blocks or OnBot Java, you do not need Android Studio.
 
 ## Getting Started
 
-If you are new to robotics or new to the FIRST Tech Challenge, then it is higly recommended to review the [FTC Block Code](https://ftc-docs.firstinspires.org/programming_resources/blocks/Blocks-Tutorial.html) to get familiar with the control system. Even if you are an advanced Java programmer, it is helpful to start with the Block Code.
+If you are new to robotics or new to the _FIRST_ Tech Challenge, then it is higly recommended to review the [FTC Block Code](https://ftc-docs.firstinspires.org/programming_resources/blocks/Blocks-Tutorial.html) to get familiar with the control system. Even if you are an advanced Java programmer, it is helpful to start with the Block Code.
 
 When you are ready to program in Java, you can download the latest version of [Android Studio](https://developer.android.com/studio?gad_source=1&gclid=CjwKCAiAzvC9BhADEiwAEhtlN1GO7x4DcoMQ9Q-BR-_y67NSKy9FjMK88L6woepRECnAuXiWYT9yrRoCiA4QAvD_BwE&gclsrc=aw.ds) or use the OnBot Java Tool.
 
 ## Questions or Need Help?
-Please ask/email one of the coaches or your team captain. You can also check the [FTC Documentation](https://ftc-docs.firstinspires.org/en/latest/).
+### User Documentation and Tutorials
+_FIRST_ maintains online documentation with information and tutorials on how to use the _FIRST_ Tech Challenge software and robot control system. Note that the online documentation is a living document that is constantly being updated and edited.
+
+[FTC Documentation](https://ftc-docs.firstinspires.org/en/latest/)

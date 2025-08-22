@@ -32,4 +32,9 @@ When you are ready to program in Java, you can download the latest version of [A
 ### User Documentation and Tutorials
 _FIRST_ maintains online documentation with information and tutorials on how to use the _FIRST_ Tech Challenge software and robot control system. Note that the online documentation is a living document that is constantly being updated and edited.
 
-[FTC Documentation](https://ftc-docs.firstinspires.org/en/latest/)
+[FIRST Tech Challenge Documentation](https://ftc-docs.firstinspires.org/en/latest/)
+
+### Javadoc Reference Material
+The Javadoc reference documentation for the FTC SDK is available online.
+
+[FTC Javadoc Documentation](https://javadoc.io/doc/org.firstinspires.ftc)

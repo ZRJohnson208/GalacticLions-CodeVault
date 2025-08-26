@@ -1,4 +1,7 @@
-# This workflow will build and test pushed or pulled code.
+# Android CI Workflow
+#
+# This GitHub Actions workflow builds and runs unit tests for the Android project
+# whenever code is pushed to or a pull request is opened against the `master` branch.
 #
 # You can adjust the behavior by modifying this file.
 

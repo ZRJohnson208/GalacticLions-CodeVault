@@ -22,8 +22,8 @@ import org.firstinspires.ftc.robotcore.external.Telemetry;
 //      - Deploy as TeleOp via FTC Driver Station. 
 //
 // ****************************************************************************
-// This program is released under the BSD-3-Clause-Clear License.
-// See LICENSE file in root of this repository.
+// This program is released under the BSD-3-Clause-Clear License
+// See LICENSE file in root of this repository
 // ****************************************************************************
 
 @TeleOp(name="Strafer_Controls", group="Tele")

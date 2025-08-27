@@ -41,8 +41,8 @@ public class StraferTeleOp extends LinearOpMode {
         DcMotor backLeft = hardwareMap.get(DcMotor.class, "lb");
         DcMotor backRight = hardwareMap.get(DcMotor.class, "rb");
 
-        // Reverse one side of the motors
-        // If it goes in reverse, reverse the other side
+        // Reverse one side of the motors for mecanum drive to ensure consistent forward movement
+        // If the robot drives backwards, reverse the other side instead
         frontLeft.setDirection(DcMotorSimple.Direction.REVERSE);
         backLeft.setDirection(DcMotorSimple.Direction.REVERSE);
 
@@ -73,16 +73,16 @@ public class StraferTeleOp extends LinearOpMode {
 //    Driving controls for the primary driver
 // ----------------------------------------------------------------------------
             
-            double y = -gamepad1.left_stick_y; // Forward/backward movement (negative: stick forward)
-            double x = gamepad1.left_stick_x * 1.1; // Left/right (strafe), scale up x to compensate for imperfect strafing
-            double rx = gamepad1.right_stick_x;
-
-            // Transform joystick inputs for field-centric driving based on current robot heading
+            double y = -gamepad1.left_stick_y; // Forward/backward (negative: stick forward)
+            double x = gamepad1.left_stick_x * 1.1; // Strafe (scaled to compensate for imperfect strafing)
+            double rx = gamepad1.right_stick_x; // Rotation
+            
+            // Convert field-relative joystick inputs to robot-relative using IMU heading (botHeading)
             double botHeading = imu.getRobotYawPitchRollAngles().getYaw(AngleUnit.RADIANS);
             double X = x * Math.cos(-botHeading) - y * Math.sin(-botHeading);
             double Y = x * Math.sin(-botHeading) + y * Math.cos(-botHeading);
 
-            // Normalize motor powers so no value exceeds the range [-1, 1] while maintaining power ratios
+            // Normalize motor powers to keep within [-1, 1] while maintaining power ratios
             double denominator = Math.max(Math.abs(Y) + Math.abs(X) + Math.abs(rx), 1);
             double frontLeftPower = (Y + X + rx) / denominator;
             double backLeftPower = (Y - X + rx) / denominator;
@@ -94,7 +94,7 @@ public class StraferTeleOp extends LinearOpMode {
             backLeft.setPower(backLeftPower);
             backRight.setPower(backRightPower);
             
-            // Reset IMU yaw angle to zero manually by pressing the 'guide' button.
+            // Reset IMU yaw angle to zero manually by pressing the 'guide' button
             if (gamepad1.guide) {
                 imu.resetYaw();
             }

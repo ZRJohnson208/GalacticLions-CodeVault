@@ -19,10 +19,11 @@ import org.firstinspires.ftc.robotcore.external.Telemetry;
 //      field-centric drive using the REV IMU for orientation correction.
 //
 //   Usage:
-//      Deploy as TeleOp via FTC Driver Station. Verify hardware mapping.
+//      - Deploy as TeleOp via FTC Driver Station.  
 //
 // ****************************************************************************
 // This program is released under the BSD-3-Clause-Clear License.
+// See LICENSE file in root of this repository.
 // ****************************************************************************
 
 @TeleOp(name="Strafer_Controls", group="Tele")

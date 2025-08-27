@@ -47,9 +47,9 @@ public class StraferTeleOp extends LinearOpMode {
         backLeft.setDirection(DcMotorSimple.Direction.REVERSE);
 
 // ----------------------------------------------------------------------------
-//    Define and Initialize the REV Hub's Inertial measurement unit
+//    Define and Initialize the REV Hub's IMU (Inertial measurement unit)
 // ----------------------------------------------------------------------------
-// Note: Adjust the orientation parameters to match the robot
+// Note: Adjust orientation parameters below to match your robot's mounting
         
         IMU imu = hardwareMap.get(IMU.class, "imu");
         IMU.Parameters parameters = new IMU.Parameters(new RevHubOrientationOnRobot(
@@ -70,14 +70,14 @@ public class StraferTeleOp extends LinearOpMode {
         while (opModeIsActive()) {
 
 // ----------------------------------------------------------------------------
-//    Driving controls for the primary driver
+//    Primary Driver Controls (gamepad1)
 // ----------------------------------------------------------------------------
             
-            double y = -gamepad1.left_stick_y; // Forward/backward (negative: stick forward)
-            double x = gamepad1.left_stick_x * 1.1; // Strafe (scaled to compensate for imperfect strafing)
+            double y = -gamepad1.left_stick_y; // Forward/backward (negative because up is negative)
+            double x = gamepad1.left_stick_x * 1.1; // Strafe left/right (scaled to compensate for imperfect strafing)
             double rx = gamepad1.right_stick_x; // Rotation
             
-            // Convert field-relative joystick inputs to robot-relative using IMU heading (botHeading)
+            // Convert field-relative joystick inputs to robot-relative using IMU heading
             double botHeading = imu.getRobotYawPitchRollAngles().getYaw(AngleUnit.RADIANS);
             double X = x * Math.cos(-botHeading) - y * Math.sin(-botHeading);
             double Y = x * Math.sin(-botHeading) + y * Math.cos(-botHeading);
@@ -95,12 +95,13 @@ public class StraferTeleOp extends LinearOpMode {
             backRight.setPower(backRightPower);
             
             // Reset IMU yaw angle to zero manually by pressing the 'guide' button
+            // Use this at the start of a match or if robot heading drifts
             if (gamepad1.guide) {
                 imu.resetYaw();
             }
 
 // ----------------------------------------------------------------------------
-//    Action controls for the secondary driver
+//    Secondary Driver Controls (gamepad2)
 // ----------------------------------------------------------------------------
         }
     }

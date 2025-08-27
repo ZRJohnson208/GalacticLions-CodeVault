@@ -12,7 +12,7 @@ import org.firstinspires.ftc.robotcore.external.navigation.AngleUnit;
 import org.firstinspires.ftc.robotcore.external.Telemetry;
 
 // ****************************************************************************
-//  StraferTeleOp
+//  StraferTeleOp.java                                   GalacticLions-Starter
 // ****************************************************************************
 //
 //   File Description:

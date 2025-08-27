@@ -94,8 +94,7 @@ public class StraferTeleOp extends LinearOpMode {
             backLeft.setPower(backLeftPower);
             backRight.setPower(backRightPower);
             
-            // Reset IMU yaw angle to zero manually by pressing the guide button.
-            // The equivalent button is start on Xbox-style controllers or options on PS4-style controllers.
+            // Reset IMU yaw angle to zero manually by pressing the 'guide' button.
             if (gamepad1.guide) {
                 imu.resetYaw();
             }

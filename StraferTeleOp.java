@@ -14,13 +14,12 @@ import org.firstinspires.ftc.robotcore.external.Telemetry;
 // ****************************************************************************
 //  StraferTeleOp.java                                   GalacticLions-Starter
 // ****************************************************************************
+//   Description:
+//      LinearOpMode for a mecanum-drive robot. Implements POV (Point of View)
+//      field-centric drive using the REV IMU for orientation correction.
 //
-//   File Description:
-//      
-//      This particular OpMode executes a POV Teleop for a mecanum robot
-//      The code is structured as a LinearOpMode
-//
-//
+//   Usage:
+//      Deploy as TeleOp via FTC Driver Station. Verify hardware mapping.
 //
 // ****************************************************************************
 // This program is released under the BSD-3-Clause-Clear License.

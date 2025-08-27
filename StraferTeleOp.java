@@ -56,7 +56,6 @@ public class StraferTeleOp extends LinearOpMode {
                 RevHubOrientationOnRobot.LogoFacingDirection.UP,
                 RevHubOrientationOnRobot.UsbFacingDirection.BACKWARD));
         // By default, IMU assumes REV Hub is mounted with logo up and USB port facing forward
-        // Set the parameters above if your mounting is different, or IMU angles will be incorrect
         imu.initialize(parameters);
         imu.resetYaw();
 

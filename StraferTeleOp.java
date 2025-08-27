@@ -73,11 +73,11 @@ public class StraferTeleOp extends LinearOpMode {
 //    Driving controls for the primary driver
 // ----------------------------------------------------------------------------
             
-            double y = -gamepad1.left_stick_y; // Note: pushing stick forward gives negative value
-            double x = gamepad1.left_stick_x * 1.1; // Counteract imperfect strafing
+            double y = -gamepad1.left_stick_y; // Forward/backward movement (negative: stick forward)
+            double x = gamepad1.left_stick_x * 1.1; // Left/right (strafe), scale up x to compensate for imperfect strafing
             double rx = gamepad1.right_stick_x;
 
-            // Rotate the movement direction counter to the bot's rotation
+            // Transform joystick inputs for field-centric driving based on current robot heading
             double botHeading = imu.getRobotYawPitchRollAngles().getYaw(AngleUnit.RADIANS);
             double X = x * Math.cos(-botHeading) - y * Math.sin(-botHeading);
             double Y = x * Math.sin(-botHeading) + y * Math.cos(-botHeading);
@@ -94,6 +94,8 @@ public class StraferTeleOp extends LinearOpMode {
             backLeft.setPower(backLeftPower);
             backRight.setPower(backRightPower);
             
+            // Reset IMU yaw angle to zero manually by pressing the guide button.
+            // The equivalent button is start on Xbox-style controllers or options on PS4-style controllers.
             if (gamepad1.guide) {
                 imu.resetYaw();
             }

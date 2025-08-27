@@ -19,7 +19,7 @@ import org.firstinspires.ftc.robotcore.external.Telemetry;
 //      The code is structured as a LinearOpMode
 //
 //   Usage:
-//      - Deploy as TeleOp via FTC Driver Station.  
+//      - Deploy as TeleOp via FTC Driver Station. 
 //
 // ****************************************************************************
 // This program is released under the BSD-3-Clause-Clear License.
@@ -55,7 +55,8 @@ public class StraferTeleOp extends LinearOpMode {
         IMU.Parameters parameters = new IMU.Parameters(new RevHubOrientationOnRobot(
                 RevHubOrientationOnRobot.LogoFacingDirection.UP,
                 RevHubOrientationOnRobot.UsbFacingDirection.BACKWARD));
-        // Without this, the REV Hub's orientation is assumed to be logo up / USB forward
+        // By default, IMU assumes REV Hub is mounted with logo up and USB port facing forward
+        // Set the parameters above if your mounting is different, or IMU angles will be incorrect
         imu.initialize(parameters);
         imu.resetYaw();
 
@@ -76,15 +77,12 @@ public class StraferTeleOp extends LinearOpMode {
             double x = gamepad1.left_stick_x * 1.1; // Counteract imperfect strafing
             double rx = gamepad1.right_stick_x;
 
-            double botHeading = imu.getRobotYawPitchRollAngles().getYaw(AngleUnit.RADIANS);
-
             // Rotate the movement direction counter to the bot's rotation
+            double botHeading = imu.getRobotYawPitchRollAngles().getYaw(AngleUnit.RADIANS);
             double X = x * Math.cos(-botHeading) - y * Math.sin(-botHeading);
             double Y = x * Math.sin(-botHeading) + y * Math.cos(-botHeading);
 
-            // Denominator is the largest motor power (absolute value) or 1
-            // This ensures all the powers maintain the same ratio, but only when
-            // at least one is out of the range [-1, 1]
+            // Normalize motor powers so no value exceeds the range [-1, 1] while maintaining power ratios
             double denominator = Math.max(Math.abs(Y) + Math.abs(X) + Math.abs(rx), 1);
             double frontLeftPower = (Y + X + rx) / denominator;
             double backLeftPower = (Y - X + rx) / denominator;

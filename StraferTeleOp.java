@@ -19,7 +19,7 @@ import org.firstinspires.ftc.robotcore.external.Telemetry;
 //      The code is structured as a LinearOpMode
 //
 //   Usage:
-//      - Deploy as TeleOp via FTC Driver Station. 
+//      - Deploy as TeleOp via FTC Driver Station 
 //
 // ****************************************************************************
 // This program is released under the BSD-3-Clause-Clear License

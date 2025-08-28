@@ -15,7 +15,7 @@ import org.firstinspires.ftc.robotcore.external.Telemetry;
 //  StraferTeleOp.java                                   GalacticLions-Starter
 // ****************************************************************************
 //   Description:
-//      This particular OpMode executes a POV Teleop for a mecanum robot.
+//      This particular OpMode executes a field centric Teleop for a mecanum robot
 //      The code is structured as a LinearOpMode
 //
 //   Usage:

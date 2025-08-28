@@ -33,7 +33,7 @@ public class StraferTeleOp extends LinearOpMode {
 // ----------------------------------------------------------------------------
 //    Define and Initialize the hardwareMaps
 // ----------------------------------------------------------------------------
-// Note: Make sure the ID's match in configuration
+// Note: Make sure the ID's match in your configuration
         
         DcMotor frontLeft = hardwareMap.get(DcMotor.class, "lf");
         DcMotor frontRight = hardwareMap.get(DcMotor.class, "rf");

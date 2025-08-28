@@ -93,7 +93,6 @@ public class StraferTeleOp extends LinearOpMode {
             backRight.setPower(backRightPower);
             
             // Reset IMU yaw angle to zero manually by pressing the 'guide' button
-            // Use this at the start of a match or if robot heading drifts
             if (gamepad1.guide) {
                 imu.resetYaw();
             }

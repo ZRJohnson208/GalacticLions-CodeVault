@@ -65,6 +65,8 @@ public class StraferTeleOp extends LinearOpMode {
         // Wait for the game to start
         waitForStart();
 
+        if (isStopRequested()) return;
+
         while (opModeIsActive()) {
 
 // ----------------------------------------------------------------------------

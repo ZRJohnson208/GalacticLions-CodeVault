@@ -1,4 +1,4 @@
-package org.firstinspires.ftc.team18443;
+package org.firstinspires.ftc.teamcode;
 
 import com.qualcomm.hardware.rev.RevHubOrientationOnRobot;
 import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
@@ -11,7 +11,7 @@ import org.firstinspires.ftc.robotcore.external.navigation.AngleUnit;
 import org.firstinspires.ftc.robotcore.external.Telemetry;
 
 // ****************************************************************************
-//  StraferTeleOp.java                                   GalacticLions-Starter
+//  StraferFieldCentric.java                                 GalacticLions2526
 // ****************************************************************************
 //   Description:
 //      This OpMode executes a field-centric Teleop for a mecanum drive robot
@@ -25,8 +25,8 @@ import org.firstinspires.ftc.robotcore.external.Telemetry;
 // See LICENSE file in root of this repository
 // ****************************************************************************
 
-@TeleOp(name="Strafer_Controls", group="Tele")
-public class StraferTeleOp extends LinearOpMode {
+@TeleOp(name="Strafer Field Centric", group="Starter Code")
+public class StraferFieldCentric extends LinearOpMode {
     
     @Override
     public void runOpMode() {

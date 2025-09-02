@@ -54,7 +54,7 @@ public class StraferFieldCentric extends LinearOpMode {
         IMU imu = hardwareMap.get(IMU.class, "imu");
         IMU.Parameters parameters = new IMU.Parameters(new RevHubOrientationOnRobot(
                 RevHubOrientationOnRobot.LogoFacingDirection.UP,
-                RevHubOrientationOnRobot.UsbFacingDirection.BACKWARD));
+                RevHubOrientationOnRobot.UsbFacingDirection.FORWARD));
         // By default, IMU assumes REV Hub is mounted with logo up and USB port facing forward
         imu.initialize(parameters);
         imu.resetYaw();

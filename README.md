@@ -26,7 +26,7 @@ To program your robot in Blocks or OnBot Java, you do not need Android Studio.
 
 If you are new to robotics or new to the _FIRST_ Tech Challenge, then it is higly recommended to review the [FTC Block Code](https://ftc-docs.firstinspires.org/programming_resources/blocks/Blocks-Tutorial.html) to get familiar with the control system. Even if you are an advanced Java programmer, it is helpful to start with the Block Code.
 
-When you are ready to program in Java, you can download the latest version of [Android Studio](https://developer.android.com/studio?gad_source=1&gclid=CjwKCAiAzvC9BhADEiwAEhtlN1GO7x4DcoMQ9Q-BR-_y67NSKy9FjMK88L6woepRECnAuXiWYT9yrRoCiA4QAvD_BwE&gclsrc=aw.ds) or use the OnBot Java Tool.
+When you are ready to program in Java, you can download Android Studio or use the OnBot Java Tool.
 
 ## Getting Help
 ### User Documentation and Tutorials

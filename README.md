@@ -8,8 +8,6 @@
 [![License](https://img.shields.io/github/license/GalacticLions/GalacticLions2526?color=0088ff)](https://raw.githubusercontent.com/GalacticLions/GalacticLions2526/refs/heads/master/LICENSE)
 [![Contributers](https://img.shields.io/github/contributors/GalacticLions/GalacticLions2526?color=0088ff)](https://github.com/GalacticLions/GalacticLions2526/graphs/contributors)
 [![GitHub commit activity](https://img.shields.io/github/commit-activity/m/GalacticLions/GalacticLions2526?color=0088ff)](https://github.com/GalacticLions/GalacticLions2526/pulse/monthly)
-[![Issues](https://img.shields.io/github/issues/GalacticLions/GalacticLions2526?color=0088ff)](https://github.com/GalacticLions/GalacticLions2526/issues)
-[![Pull Requests](https://img.shields.io/github/issues-pr/GalacticLions/GalacticLions2526?color=0088ff)](https://github.com/GalacticLions/GalacticLions2526/pulls)
 
 # Galactic Lions TeamCode - 2025-2026 DECODE Season
 **Welcome to the Lakeview Robotics Code Respiratory! This space is primarily built for our dedicated programmers of our teams.**

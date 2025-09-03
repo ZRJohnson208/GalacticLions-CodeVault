@@ -1,3 +1,0 @@
-# Commenting Guidelines
-
-(Outline what code commenting is and the general philosophy behind commenting in this reop.)

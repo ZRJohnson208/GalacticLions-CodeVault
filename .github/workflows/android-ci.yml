@@ -31,5 +31,5 @@ jobs:
       - name: Grant execute permission to gradlew
         run: chmod +x gradlew  # Makes Gradle wrapper executable
 
-      - name: Run unit tests
-        run: ./gradlew test
+      - name: Build with Gradle
+        run: ./gradlew build

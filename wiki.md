@@ -1,7 +1,7 @@
 # Commenting Guidelines
 
-### Main Header
-(Overview of the followiing code below and its advantages.)
+### The Main Header
+(Outline a description of the followiing code below.)
 
 ```
 // ****************************************************************************

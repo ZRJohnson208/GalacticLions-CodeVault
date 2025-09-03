@@ -1,8 +1,7 @@
 <!--- Provide a general summary of this PR in the Title above -->
 
 ## Description
-Please include a summary of the changes.
-
+Describe your changes in detail.
 <!-- Include any relevant screenshots or code snippets that help visualize the changes made -->
 
 ## Motivation and Context
@@ -13,3 +12,6 @@ Why is this change required?
 - [ ] The code is properly formatted and is consistent with the existing code style
 - [ ] I have commented my code, particularly in hard-to-understand areas
 - [ ] I have performed a self-review of my code
+
+## Further Comments
+If you have any additional notes or comments, please add them here.

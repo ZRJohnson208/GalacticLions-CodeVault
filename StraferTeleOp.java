@@ -32,7 +32,7 @@ public class StraferTeleOp extends LinearOpMode {
     public void runOpMode() {
 
 // ----------------------------------------------------------------------------
-//    Define and Initialize the hardwareMaps
+//    Define and Initialize the Motors
 // ----------------------------------------------------------------------------
 // Note: Make sure the ID's match in your configuration
         

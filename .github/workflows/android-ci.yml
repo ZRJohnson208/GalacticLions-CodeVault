@@ -1,6 +1,6 @@
 # Android CI Workflow
 #
-# This GitHub Actions workflow builds and runs unit tests for the Android project.
+# This GitHub Actions workflow builds and tests for the Android project.
 
 name: Android CI
 
